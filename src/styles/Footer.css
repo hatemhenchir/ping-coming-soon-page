@@ -1,0 +1,40 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.25rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.icon-container {
+  height: 1.875rem;
+  width: 1.875rem;
+  border: .0625rem solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.875rem;
+  cursor: pointer;
+}
+.icon-container:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.icon-container:hover ion-icon {
+  color: white;
+}
+
+ion-icon {
+  color: hsl(223, 87%, 63%);
+  width: .9375rem;
+}
+.copyright {
+  width: 68%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .9375rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1.875rem;
+}

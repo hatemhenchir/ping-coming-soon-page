@@ -1,0 +1,105 @@
+main {
+  margin-bottom: .9375rem;
+}
+.formulaire {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 38.4rem;
+}
+.formulaire h2 {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.5625rem;
+  font-weight: 300;
+  margin-bottom: .625rem;
+}
+span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+.formulaire p {
+  color: hsl(209, 33%, 12%);
+  font-size: .9375rem;
+  font-weight: 300;
+  margin-bottom: .625rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin-bottom: .625rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: .0625rem solid hsl(223, 100%, 88%);
+  padding-left: 1.25rem;
+  outline: none;
+}
+form input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+form button {
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 3.125rem;
+  cursor: pointer;
+  -webkit-box-shadow: 6px 18px 29px 0px hsl(223, 100%, 88%);
+  -moz-box-shadow: 6px 18px 29px 0px hsl(223, 100%, 88%);
+  box-shadow: 6px 18px 29px 0px hsl(223, 100%, 88%);
+}
+
+form button:hover {
+  background-color: hsla(223, 87%, 63%, 0.75);
+}
+.hero {
+  text-align: center;
+  width: 80%;
+  max-width: 38.4rem;
+  margin: 0 auto;
+}
+.hero img {
+  width: 100%;
+}
+form .errore {
+  color: hsl(354, 100%, 66%);
+  font-size: .875rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+.outline {
+  border: .0625rem solid hsl(354, 100%, 66%);
+}
+form p {
+  display: none;
+}
+form p.errore {
+  display: block;
+}
+
+@media all and (min-width: 1024px) {
+  .formulaire h2 {
+    font-size: 2.5rem;
+  }
+  .formulaire p {
+    font-size: 1.125rem;
+  }
+  form .errore {
+    position: absolute;
+    transform: translate(20%, 50px);
+    font-size: .9375rem;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form input {
+    width: 68%;
+  }
+  form button {
+    width: 30%;
+  }
+}
